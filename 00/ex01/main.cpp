@@ -22,12 +22,12 @@ int main(void)
         }
         else if (cmd == "ADD")
         {
-            std::cout << "ADD" << std::endl;
+            PhoneBook.addContact();
 
         }
         else if (cmd == "SEARCH")
         {
-            std::cout << "SEARCH" << std::endl;
+            PhoneBook.searchContact();
 
         }
         else
