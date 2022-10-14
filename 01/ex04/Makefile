@@ -1,6 +1,6 @@
-NAME = zombie
+NAME = replace
 
-SRCS = Zombie.cpp newZombie.cpp randomChump.cpp main.cpp
+SRCS = Replace.cpp main.cpp
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 

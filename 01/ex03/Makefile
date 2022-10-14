@@ -1,6 +1,6 @@
-NAME = zombie
+NAME = violence
 
-SRCS = Zombie.cpp newZombie.cpp randomChump.cpp main.cpp
+SRCS = HumanA.cpp HumanB.cpp Weapon.cpp main.cpp
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
