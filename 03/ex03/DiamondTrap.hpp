@@ -18,6 +18,7 @@ class DiamondTrap: public ScavTrap, public FragTrap
 		DiamondTrap &operator=(const DiamondTrap &copy);
 
 		void	whoAmI(void);
+		void	attack(const std::string &target);
 };
 
 #endif
