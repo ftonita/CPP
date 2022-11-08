@@ -67,3 +67,26 @@ std::ostream &operator<<(std::ostream &os, const Bureaucrat &obj) {
 	os << obj.getName() << ", bureaucrat grade " << obj.getGrade() << "\n";
 	return os;
 }
+
+void Bureaucrat::signForm(Form &form) {
+	try {
+		form.beSigned(*this);
+		std::cout << this->getName() << " signs " << form.getName() << std::endl;
+	}
+	catch (std::exception &e) {
+		std::cout << this->getName() << " cannot sign " << form.getName() << " because " << e.what();
+	}
+	catch (std::string reasonAlreadySigned) {
+		std::cout << this->getName() << " cannot sign " << form.getName() << " because " << reasonAlreadySigned;
+	}
+}
+
+void Bureaucrat::executeForm(const Form &form) {
+	try {
+		form.execute(*this);
+		std::cout << this->_name << " executes " << form.getName() << std::endl;
+	}
+	catch (std::exception &e) {
+		std::cout << "Execution is failed because " << e.what() << std::endl;
+	}
+}

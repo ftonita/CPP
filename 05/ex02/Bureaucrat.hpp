@@ -3,8 +3,11 @@
 
 # include <iostream>
 
+
 # define MIN_GRADE 150
 # define MAX_GRADE 1
+
+class Form;
 
 class Bureaucrat
 {
@@ -27,12 +30,13 @@ class Bureaucrat
 	void	incrementGrade(int n);
 	void	decrementGrade(int n);
 
+	void signForm(Form &form);
 	class GradeTooHighException: public std::exception
 	{
 		public:
 		GradeTooHighException();
 		virtual ~GradeTooHighException() throw();
-		const char* what() const throw();
+		const char *what() const throw();
 	};
 
 	class GradeTooLowException: public std::exception
@@ -40,11 +44,15 @@ class Bureaucrat
 		public:
 		GradeTooLowException();
 		virtual ~GradeTooLowException() throw();
-		const char* what() const throw();
+		const char *what() const throw();
 	};
+
+	void executeForm(const Form &form);
 	
 };
 
 std::ostream &operator<<(std::ostream &os, const Bureaucrat &obj);
+
+# include "Form.hpp"
 
 #endif

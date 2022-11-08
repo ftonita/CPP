@@ -1,8 +1,8 @@
-NAME = bureaucrat
+NAME = form
 
-HEADERS = Bureaucrat.hpp
+HEADERS = Bureaucrat.hpp Form.hpp
 
-SRCS = main.cpp Bureaucrat.cpp
+SRCS = main.cpp Bureaucrat.cpp Form.cpp
 
 FLAGS = -Wall -Wextra -Werror -Wshadow -std=c++98
 
