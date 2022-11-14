@@ -1,8 +1,8 @@
-NAME = scalar
+NAME = serialize
 
-HEADERS = Scalar.hpp
+HEADERS = Data.hpp
 
-SRCS = main.cpp Scalar.cpp
+SRCS = main.cpp Data.cpp
 
 FLAGS = -Wall -Wextra -Werror -Wshadow -std=c++98
 

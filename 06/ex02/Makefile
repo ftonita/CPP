@@ -1,8 +1,8 @@
-NAME = scalar
+NAME = realtype
 
-HEADERS = Scalar.hpp
+HEADERS = Base.hpp A.hpp B.hpp C.hpp
 
-SRCS = main.cpp Scalar.cpp
+SRCS = main.cpp Base.cpp A.cpp B.cpp C.cpp
 
 FLAGS = -Wall -Wextra -Werror -Wshadow -std=c++98
 
